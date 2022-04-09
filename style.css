@@ -346,12 +346,12 @@ header h1
 
 @media screen and (max-width: 550px) {.set10x {font-size: 19vw;}}
 
-.btn-dark{font-weight: bold;text-transform: uppercase;letter-spacing: 4px;font-family: 'Montserrat', sans-serif;}
-
+.btn-dark{font-weight: bold;text-transform: uppercase;letter-spacing: 5px;font-family: 'Montserrat', sans-serif;}
 
 @media screen and (max-width: 550px) {
-  header h1 {letter-spacing: 0px;}
+  .btn-dark {letter-spacing: 0px;}
 }
+
 
 .content-sec-1
 {
