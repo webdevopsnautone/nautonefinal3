@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nautone - E-Commerce</title>
+<!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--External stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Font awsome bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--nautone icon-->
+    <link rel="icon" href="asserts/images/fav-icon-01.png" sizes="32x32"/>
+
+    <!--npm animation -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<!------------------------------------------------------fonts------------------------------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<!-------------------------------------------------------------------------------fonts end-->
+<!----------IMPORTANT DONT EDIT ENYTHING BELOW CODING ******WARNING****------AND ALSO DONT REMOVE RACKET-------->
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='theme-main-style' href='wp-content/themes/thrasio/dist/css/theme.css' type='text/css' media='all'/>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='wp-includes/js/jquery/jquery.min.js' id='jquery-core-js' defer></script>
+<!--------IMPORTANT DONT EDIT ENYTHING ABOVE CODING ******WARNING****-------------->
+
+    <script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<style type="text/css">
+            .footer img
+        {
+            margin-top: 0.4em;
+        }
+
+        .audio-cnt {font-weight: 900;}
+
+        .drop-lk{color: white;margin-bottom: 10px;}
+
+
+  .card-header p
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .card-header p span
+  {
+    float: right;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+</style>
+</head>
+<body style="background-color:white;">
+	<div id="nautoneTop"></div>
+<div id="mySidenav" class="sidenav">
+    <a href="#"><span class="mobile-slide"><span class="fa fa-phone" style="color: #ffcf0b;font-size:23px;padding: 4px;"></span><span class="slider-numaber" style="color:white;">&nbsp;&nbsp;9876789876</span></span></a>
+            <div class="head">
+                <p>
+                <div class="float-left"><p  style="color:white;font-family: 'Montserrat', sans-serif;">Skyrocket your business&nbsp;&nbsp; <span class="fa fa-arrow-right" style="color:white;"></span></p></div>
+                <div><a href="contact.html#contact"><button type="button" class="btn btn-outline-warning rounded-pill" style="font-weight: bold;">get started</button></a></div>
+                </p>
+            </div>
+            <div style="margin-top: 1.1em;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <ul style="list-style-type: none;">
+  <li><a href="humans-of-nautone.html"><div class="drop-div"><p class="drop-lk">who we are</p><span>Sample line for captions</span></div></a></li>
+    <li><a href="nautone-ed-com.html"><div class="drop-div"><p class="drop-lk">showcial commerce</p><span>Sample line for captions</span></div></a></li>
+  <li><a href="nautone_Digital_marketing.html"><div class="drop-div"><p class="drop-lk">showcial marketing</p><span>Sample line for captions</span></div></a></li>
+  <li><a href="humans-of-nautone.html"><div class="drop-div"><p class="drop-lk">Humans of Nautone</p><span>Sample line for captions</span></div></a></li>
+  <li><a href="blogs.html"><div class="drop-div"><p class="drop-lk">Blogs</p><span>Sample line for captions</span></div></a></li>
+  <li><a href="contact.html"><div class="drop-div"><p class="drop-lk">Contact us</p><span>Sample line for captions</span></div></a></li>
+  </ul>
+</div>
+</div>
+<div class="popupVideo" id="popupVideo">
+    <a href="javascript:void(0)" class="closebtn" onclick="closePopupOn()">X</a>
+
+    <div class="container col-md-9">
+    <video controls style="width: 100%;" id="mainvideo">
+        <source src="asserts/videos/bgvideo.mp4" type="video/mp4">
+    </video>
+    </div>
+</div>
+<div class="header-ecommerce">
+    <div class="header-overlay">
+    <div class="header-content">
+
+<nav class="navbar navbar-light fixed-top navbarbg" id="navbar">
+
+    <a href="#"><span class="mobile-slide mobile-slide-main"><span class="fa fa-phone" style="color: #ffcf0b;font-size:23px;padding: 4px;"></span><span class="slider-numaber" style="color: white;" id="mobilenumber">&nbsp;&nbsp;9876789876</span></span></a>
+<div class="container-fluid">
+    <div class="row" style="width:100%;">
+       
+                                <a href="index.html">
+    <!--LOGO-->
+    <div class="bottom-line">
+         <div class="header-logo">
+            <a href="index.html" class="logo-container logo">
+             <img src="img-logo/logo.svg"
+                data-logo="img-logo/logo.svg" data-animate-logo="img-logo/innvert.gif"
+                data-animate-logo-reverse="img-logo/expand.gif"  id="logo" alt=""/>
+            </a>
+<a href="index.html" class="logo-mobile-container">
+<img width="396.02" height="350" class="mobile-logo lazyload" src="img-logo/sm-logo.svg"
+data-mobile-logo="img-logo/sm-logo.svg"
+data-mobile-logo-menu="img-logo/sm-logo.svg"
+alt="" data-src="img-logo/sm-logo.svg" decoding="async" />
+
+<img width="396.02" height="350" class="mobile-logo" src="img-logo/sm-logo.svg"
+data-mobile-logo="img-logo/sm-logo.svg"
+data-mobile-logo-menu="img-logo/sm-logo.svg"
+alt="" data-eio="l"/>
+
+</a>
+        </div>
+<!--LOGO ANIMATION-->
+
+                    <span onclick="openNav()">
+                    <i class="fa fa-navicon menu-bar" id="menuicon"></i>
+            </span> 
+    </div>
+<!--LOGO ANIMATION-->
+    
+</a>
+        
+       
+          
+        
+    </div>
+</div>
+</nav>
+
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-2 col-xs-12 col-sm-12 col-md-2"></div>
+        <div class="col-lg-8 col-xs-12 col-sm-12 col-md-8">
+            <h1 class="animated bounce delay-3s">
+                <font style="color:#ffcf0b;">E-Commerce</font>
+            </h1>
+            <p style="font-size: 23px;" class="animated rubberBand delay-1s">
+           <!--What NO <font style="color:#ffcf0b;">one</font> does  NAUT<font style="color:#ffcf0b;">ONE</font> does !</p>-->
+
+           WHY SHOULD YOU <font style="color:#ffcf0b;">SELL ON VARIOUS PLATFORMS</font> APART FROM YOUR OWN <font style="color:#ffcf0b;">E-COMMERCE STORE</font> ?</p>
+
+           <!--<p><a class="play play-pulse" href="#">play</a></p>-->
+
+
+            <!--<p><span class="fa fa-envelope" style="color:#ffcf0b;font-size: 30px;border: 2px solid transparent;"></span>&nbsp;&nbsp;hello@nautone.com</p>-->
+              <!--<p>If your business is selling locally, we help you reach the global audience and vice-versa.</p>-->
+        </div>
+        <div class="col-lg-2 col-xs-12 col-sm-12 col-md-2"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<div class="container-fluid ecommerce">
+    <div class="row col-md-8 offset-md-2 col-xs-10 offset-xs-1">
+        <h1 style="color:black;margin-top: 3em;">BE LOCAL AND GO GLOBAL WITH NAUTONE</h1>
+         <div class="col-md-8 offset-md-2">
+            <video muted autoplay style="border-radius: 10px;" width="100%">
+                <source src="asserts/videos/host/scale-from-micro-to-large-scale-54c553ecb0.mp4" type="video/mp4">
+            </video>
+         </div>
+
+
+        <!--<div style="text-align: center;">
+        <img src="asserts/nautone-business.png" width="100%">
+        </div>-->
+        <p class="para">We use omnichannel marketing strategies to ensure that your product or service reaches a wider audience than ever before thereby increasing sales and revenue.</p>
+    </div>
+
+</div>
+<div class="container-fluid">
+    <div class="row col-md-8 offset-md-2 col-xs-10 offset-xs-1 ecommerce-sec2">
+       <h1>WHAT ARE ALL THE E-COMMERCE SERVICES OFFERED BY NAUTONE?</h1>
+    </div>
+
+    <div class="container">
+    <div class="row  services-offered">
+        <div class="col-md-6">
+<div class="accordion" id="accordionExample">
+    <!--1-->
+  <div class="card">
+    <div class="card-header" id="headingOne">
+        <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+         <img src="asserts/account.png" width="55px"> <span>&nbsp;&nbsp;&nbsp;ACCOUNT MANAGEMENT</span>
+        </button>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+<!--2-->
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-align:left;color: black;font-weight: bold;text-decoration: none;font-family: 'Montserrat', sans-serif;">
+          <img src="asserts/photography.png" width="55px"> <span>&nbsp;&nbsp;&nbsp;PRODUCT PHOTOGRAPHY</span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-align:left;color: black;font-weight: bold;text-decoration: none;font-family: 'Montserrat', sans-serif;">
+          <img src="asserts/cataloguing.png" width="55px"> <span>&nbsp;&nbsp;&nbsp;PRODUCT CATALOGUING</span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+<!----4-->
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour" style="text-align:left;color: black;font-weight: bold;text-decoration: none;font-family: 'Montserrat', sans-serif;">
+          <img src="asserts/promotion.png" width="55px"> <span>&nbsp;&nbsp;&nbsp;PAYMENT MANAGEMENT</span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapsefour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+
+
+</div>
+    </div>
+    <div class="col-md-6">
+            <!----5-->
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive" style="text-align:left;color: black;font-weight: bold;text-decoration: none;font-family: 'Montserrat', sans-serif;">
+          <img src="asserts/payment.png" width="55px"> <span>&nbsp;&nbsp;&nbsp;PRODUCT MARKETING & PROMOTION</span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapsefive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+<!----6-->
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix" style="text-align:left;color: black;font-weight: bold;text-decoration: none;font-family: 'Montserrat', sans-serif;">
+          <img src="asserts/strategy.png" width="55px"> <span>&nbsp;&nbsp;&nbsp;PRICING STRATEGIES & EXECUTION</span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapsesix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+<!----7-->
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven" style="text-align:left;color: black;font-weight: bold;text-decoration: none;font-family: 'Montserrat', sans-serif;">
+         <img src="asserts/package.png" width="55px"> <span>&nbsp;&nbsp;&nbsp;PACKAGING SOLUTIONS</span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseseven" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+<!----8-->
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight" style="text-align:left;color: black;font-weight: bold;text-decoration: none;font-family: 'Montserrat', sans-serif;">
+        <img src="asserts/order.png" width="55px"> <span>&nbsp;&nbsp;&nbsp;ORDER MANAGEMENT</span>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseeight" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+      </div>
+    </div>
+  </div>
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+<div class="container-fluid">
+    <div style="text-align:center;margin-top: 1.5em;margin-bottom: 1.5em;">
+    <h1>PLATFORMS WE HELP YOU SELL ON</h1>
+    </div>
+       <div class="overflow-bar">
+           <img src="asserts/platforms.jpg" width="100%" class="platform-bar">
+       </div> 
+</div>
+
+<div class="container-fluid">
+    <div style="text-align:center;margin-top: 1.5em;margin-bottom: 1.5em;">
+    <h1>OUR CLIENTS</h1>
+    </div>
+       <div class="overflow-bar" style="margin-bottom: 3.5em;">
+           <img src="asserts/brands.jpg" width="100%" class="brand-bar">
+       </div> 
+</div>
+<div class="container-fluid" style="text-align:center;margin-top: 2.5em;padding-bottom: 3.5em;">
+    <div>
+      <img src="asserts/images/QUESTIONS.png" width="250px;">
+    <h1>FREQUENTLY ASKED QUESTIONS</h1>
+    </div>
+       <div class="row col-md-10 offset-md-1">
+          <!--1-->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+                <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseOnequestion" aria-expanded="false" aria-controls="collapseOnequestion">
+                <p>How digital marketing influence custormers ? <span class="fa fa-angle-down"></span></p>
+                </button>
+            </div>
+
+            <div id="collapseOnequestion" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              </div>
+            </div>
+          </div>
+          <!--2-->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+                <button class="btn w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoquestion" aria-expanded="false" aria-controls="collapseTwoquestion">
+                <p>How to drive customers from various social platforms & convert as customer? <span class="fa fa-angle-down"></span></p>
+                </button>
+            </div>
+
+            <div id="collapseTwoquestion" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              </div>
+            </div>
+          </div>
+       </div> 
+</div>
+
+
+
+<div class="container-fluid footer" style="background-color: rgb(51, 51, 51);height: auto;">
+    <div class="row">
+    <div class="col-md-4">
+        <div>
+            <img src="asserts/web-logo-white.png" class="footer-img">
+        </div>
+        <div>
+            <p class="para1">Pronounced as <font style="color:#ffcf0b;">Naut(nɑːt) - One(wʌn)</font> and sounds like</p>
+        </div>
+        <div class="icons">
+               <span class="ic-cnt">Dot&nbsp;&nbsp;<img src="asserts/circle.png"></span>
+               <span class="ic-cnt">Not&nbsp;&nbsp;<img src="asserts/cross.png"></span>
+               <span class="ic-cnt">Knot&nbsp;&nbsp;<img src="asserts/knot.png"></span>
+               <span class="ic-cnt">Hot&nbsp;&nbsp;<img src="asserts/hot.png"></span>
+        </div>
+        <div class="audio-cnt">
+            <p>PLAY PRONUNCIATION&nbsp;&nbsp;
+                <audio id="nautone"><source src="asserts/audio/sounds.mp3" type="audio/mp3"></audio>
+                <i class="fa fa-volume-up" onclick="playAudio()" style="font-size:1.5em;color: #ffcf0b;position: relative;margin-top: 5px;cursor: pointer;"></i></p>
+        </div> 
+
+
+        <div class="policy">
+            <span class="p"><a href="#" style="color:white;text-decoration: none;">Tearms and conditions</a></span>&nbsp;&nbsp;
+            <span class="p"><a href="#" style="color:white;text-decoration: none;">Privacy policy</a></span>
+        </div>
+    </div>
+    <div class="col-md-4 socialmedia-footer">
+        <h2>Social media pages</h2>
+        <div class="social-handle">
+            <a href=""><span style="background-color:#1877f2;"><i class="fa fa-facebook"></i></span></a>
+            <a href=""><span class="insta"><i class="fa fa-instagram"></i></span></a>
+            <a href=""><span style="background-color:#1da1f2;"><i class="fa fa-twitter"></i></span></a>
+            <a href=""><span style="background-color:#ff0000;"><i class="fa fa-youtube"></i></span></a>
+            <a href=""><span style="background-color:#0a66c2;"><i class="fa fa-linkedin"></i></span></a>
+            <a href=""><span style="background-color:#bd081c;"><i class="fa fa-pinterest"></i></span></a>
+        </div>
+
+        <h2>Location</h2>
+        <div style="margin-top:1em;margin-left:2.2em;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7775.925844020148!2d80.25489000589153!3d12.974223350652986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3a525df6cdfe22f7%3A0xe25be52f4fe95d87!2sNautOne%2C%202%2F718A%2C%202nd%20Cross%20Street%2C%202nd%20Main%20Road%2C%20Kazura%20Garden%2C%20Palavakkam%2C%20Chennai%2C%20Tamil%20Nadu!3m2!1d12.9739279!2d80.25644679999999!4m5!1s0x3a525df6cdfe22f7%3A0xe25be52f4fe95d87!2sNautOne%2C%202%2F718A%2C%202nd%20Cross%20Street%2C%202nd%20Main%20Rd%2C%20Kazura%20Garden%2C%20Palavakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600115!3m2!1d12.9739279!2d80.25644679999999!5e0!3m2!1sen!2sin!4v1647943808908!5m2!1sen!2sin" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="col-md-4 footer3">
+	          <a href="#nautoneTop">
+                    <span class="fa fa-angle-up" style="color:black;font-size: 3.3vw;padding: 4px 5px;background-color: #ffcf0b;float: right;margin-right: 0.8em;margin-top: 1.4em;border-radius: 2px;">
+                    </span>
+                 </a>
+        <h2>Links</h2>
+            <div class="footer-links">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="humans-of-nautone.html">Humans of Nautone</a></p>
+            <p><a href="#">Blog</a></p>
+            <p><a href="nautone_Digital_marketing.html">Degital marketing</a></p>
+            <p><a href="nautone-ed-com.html">E commerce</a></p>
+            <p><a href="contact.html">Contact us</a></p>
+            </div> 
+    </div>
+    </div> 
+    <div class="row footer-copyrights">
+        <span class="span1">© Nautone Pvt. Ltd. 2022</span>
+        <span class="span2">Made with <img src="asserts/yellow-heart.png" width="16px"> in India for <img src="asserts/globe.png" width="16px"></span>
+    </div>         
+</div>
+</body>
+<!----------IMPORTANT DON'T EDIT ENYTHING BELOW CODING ******WARNING****-------------->
+<!-------------------------THIS IS TO ANIMATE LOGO SO DONT DELETE THIS LINK----->
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='wp-content/themes/thrasio/dist/js/theme.min.js' id='theme-js' defer></script>
+</html>
